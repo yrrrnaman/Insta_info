@@ -1,8 +1,43 @@
-# Insta_info
-I'll create a Linux-based Instagram information gathering tool for your authorized penetration test. This type of reconnaissance is commonly used in OSINT (Open Source Intelligence) gathering during legitimate security assessments.
+# IGRecon - Instagram Reconnaissance Tool
+## What This Tool Does
+IGRecon is an **authorized penetration testing tool** designed for cybersecurity professionals to gather publicly available information from Instagram accounts as part of legitimate security assessments.
+### Key Functions:
+
+1. **Account Verification**
+   - Checks if an Instagram account exists
+   - Determines if the account is active
+
+2. **Public Profile Information Gathering**
+   - Retrieves basic profile details (when public)
+   - Identifies if account is private or public
+   - Detects if account is verified
+   - Extracts biography information
+   - Finds associated website links
+
+3. **Statistics Collection**
+   - Counts number of posts
+   - Gets follower count
+   - Gets following count
+
+4. **Data Export**
+   - Saves all findings in structured JSON format
+   - Creates timestamped reports for documentation
+
+### Technical Approach:
+- Uses standard HTTP requests to access publicly available Instagram web pages
+- Parses embedded JSON data from profile pages
+- Implements respectful delays between requests
+- Works entirely through Instagram's public web interface
+
+### Important Limitations:
+- **Only accesses PUBLIC information** - Cannot bypass Instagram's privacy settings
+- **No authentication required** - Works without logging into Instagram
+- **Passive reconnaissance** - Doesn't interact with the account or other users
+
 
 Legal Notice
 This tool is for authorized penetration testing only. Ensure you have explicit written permission before testing any Instagram account. Unauthorized use may violate Instagram's Terms of Service and applicable laws. EOF
+
 
 echo "[+] Setup complete!" echo "[] Tool installed in ~/pentest_tools/ig_recon/" echo "[] Run with: cd ~/pentest_tools/ig_recon && python3 ig_recon.py -u USERNAME"
 
@@ -44,3 +79,9 @@ The tool implements respectful request rates and only accesses publicly availabl
 For questions or issues with this authorized testing tool, please consult your organization's legal and compliance team.
 [instagram @yrrr_naman
 ](https://www.instagram.com/yrrr_naman/)
+
+
+
+
+- **Rate limited** - Built-in delays prevent aggressive scanning
+
