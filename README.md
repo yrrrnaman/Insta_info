@@ -19,19 +19,14 @@ echo "[+] Setup complete!" echo "[] Tool installed in ~/pentest_tools/ig_recon/"
 Run Basic Reconnaissance:
 
 bash
-
-
-
 cd ~/pentest_tools/ig_recon
 python3 ig_recon.py -u target_username
 Save Results to File:
 
 bash
-
-
-
 python3 ig_recon.py -u target_username -o target_recon.json
 Capabilities
+
 Checks if Instagram account exists
 Gathers public profile information
 Retrieves follower/following counts
