@@ -1,0 +1,8 @@
+# Basic usage
+python3 ig_recon.py -u username
+
+# Save results to specific file
+python3 ig_recon.py -u username -o results.json
+
+# Add delay between requests
+python3 ig_recon.py -u username --delay 2
