@@ -14,10 +14,15 @@ echo "[+] Setup complete!" echo "[] Tool installed in ~/pentest_tools/ig_recon/"
    chmod +x ig_recon_setup.sh
    ./ig_recon_setup.sh
 
+2. Run Basic Reconnaissance:
+3. ```bash
    cd ~/pentest_tools/ig_recon
-python3 ig_recon.py -u target_username
+   python3 ig_recon.py -u target_username
 
-python3 ig_recon.py -u target_username -o target_recon.json
+4. Save Results to File:
+5. ```bash
+   python3 ig_recon.py -u target_username -o target_recon.json
+
 
 Checks if Instagram account exists
 Gathers public profile information
@@ -37,3 +42,5 @@ Understand that unauthorized use may constitute illegal activity
 The tool implements respectful request rates and only accesses publicly available information through standard web requests, consistent with legitimate OSINT practices in cybersecurity assessments.
 
 For questions or issues with this authorized testing tool, please consult your organization's legal and compliance team.
+[instagram @yrrr_naman
+](https://www.instagram.com/yrrr_naman/)
