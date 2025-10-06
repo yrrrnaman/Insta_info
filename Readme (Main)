@@ -1,0 +1,59 @@
+# IGRecon - Instagram Reconnaissance Tool
+
+## What This Tool Does
+
+IGRecon is an **authorized penetration testing tool** designed for cybersecurity professionals to gather publicly available information from Instagram accounts as part of legitimate security assessments.
+
+### Key Functions:
+
+1. **Account Verification**
+   - Checks if an Instagram account exists
+   - Determines if the account is active
+
+2. **Public Profile Information Gathering**
+   - Retrieves basic profile details (when public)
+   - Identifies if account is private or public
+   - Detects if account is verified
+   - Extracts biography information
+   - Finds associated website links
+
+3. **Statistics Collection**
+   - Counts number of posts
+   - Gets follower count
+   - Gets following count
+
+4. **Data Export**
+   - Saves all findings in structured JSON format
+   - Creates timestamped reports for documentation
+
+### Technical Approach:
+
+- Uses standard HTTP requests to access publicly available Instagram web pages
+- Parses embedded JSON data from profile pages
+- Implements respectful delays between requests
+- Works entirely through Instagram's public web interface
+
+### Important Limitations:
+
+- **Only accesses PUBLIC information** - Cannot bypass Instagram's privacy settings
+- **No authentication required** - Works without logging into Instagram
+- **Passive reconnaissance** - Doesn't interact with the account or other users
+- **Rate limited** - Built-in delays prevent aggressive scanning
+
+### Legal Compliance:
+
+⚠️ **THIS TOOL IS STRICTLY FOR AUTHORIZED SECURITY TESTING**
+
+Before using:
+- You MUST have written permission from the account owner
+- Usage must comply with Instagram's Terms of Service
+- Only works on accounts you own or have explicit authorization to test
+- Unauthorized use may violate computer fraud laws
+
+This type of tool is commonly used by:
+- Corporate security teams auditing their own social media presence
+- Penetration testers with written client authorization
+- Digital forensics investigators in legal proceedings
+- Cybersecurity researchers in controlled environments
+
+The tool helps organizations understand what public information about their brand or employees is visible on social media platforms, enabling them to improve their security awareness and privacy training programs.
