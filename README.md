@@ -7,25 +7,17 @@ This tool is for authorized penetration testing only. Ensure you have explicit w
 echo "[+] Setup complete!" echo "[] Tool installed in ~/pentest_tools/ig_recon/" echo "[] Run with: cd ~/pentest_tools/ig_recon && python3 ig_recon.py -u USERNAME"
 
 
-
-
-
 ## How to Use the Tool
 
 1. **Setup**:
    ```bash
    chmod +x ig_recon_setup.sh
    ./ig_recon_setup.sh
-Run Basic Reconnaissance:
 
-bash
-cd ~/pentest_tools/ig_recon
+   cd ~/pentest_tools/ig_recon
 python3 ig_recon.py -u target_username
-Save Results to File:
 
-bash
 python3 ig_recon.py -u target_username -o target_recon.json
-Capabilities
 
 Checks if Instagram account exists
 Gathers public profile information
